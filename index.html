@@ -3,16 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gallery</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Private Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="wrap">
-    <h1>Gallery</h1>
-    <p class="muted">Click to enter.</p>
-    <div class="nav">
-      <a class="btn" href="gallery.html">Enter Gallery</a>
+  <header class="topbar">
+    <div class="wrap">
+      <h1>Private Gallery</h1>
+      <p class="sub">18+ only • Photos + Videos</p>
     </div>
   </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="section-title">
+        <h2>Photos</h2>
+        <div id="photoCount" class="count"></div>
+      </div>
+      <div id="photoGrid" class="grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Videos</h2>
+        <div id="videoCount" class="count"></div>
+      </div>
+      <div id="videoGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <div class="modal-bar">
+        <div id="modalTitle" class="modal-title">Preview</div>
+        <button id="closeBtn" class="close">Close</button>
+      </div>
+      <div id="modalContent" class="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
 </body>
 </html>
