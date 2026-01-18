@@ -1,0 +1,99 @@
+:root{
+  --bg:#0b0c10;
+  --card:#12141b;
+  --text:#f2f3f5;
+  --muted:#a7adbb;
+  --border:#222634;
+  --accent:#6ee7ff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+.wrap{max-width:1100px;margin:0 auto;padding:22px}
+.nav{margin-top:14px}
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--text);
+  text-decoration:none;
+}
+.btn:hover{border-color:var(--accent)}
+.muted{color:var(--muted)}
+.topbar{display:flex;align-items:center;gap:14px}
+.title{margin:0;font-size:1.4rem}
+.link{color:var(--accent);text-decoration:none}
+.link:hover{text-decoration:underline}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(170px, 1fr));
+  gap:12px;
+}
+.tile{
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
+  background:var(--card);
+  cursor:pointer;
+}
+.tile img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  display:block;
+}
+.tile .cap{
+  padding:10px;
+  font-size:.95rem;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+}
+.badge{
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:2px 8px;
+  font-size:.8rem;
+  color:var(--text);
+}
+
+/* Lightbox */
+.lightbox{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.85);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.lightboxInner{
+  width:min(100%, 980px);
+  max-height:85vh;
+}
+.lightboxInner video{
+  width:100%;
+  max-height:85vh;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#000;
+}
+.close{
+  position:fixed;
+  top:16px; right:16px;
+  width:44px; height:44px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:var(--card);
+  color:var(--text);
+  font-size:20px;
+  cursor:pointer;
+}
+.close:hover{border-color:var(--accent)}
