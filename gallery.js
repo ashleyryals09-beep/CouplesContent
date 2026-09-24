@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JB Studio | Gallery</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>JB | Gallery</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,548 +16,551 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet"
-  />
+  >
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="index.html" class="brand">JB<span>.</span></a>
+<header class="site-header">
+  <nav class="navbar">
 
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="gallery.html" class="active">Gallery</a>
-        <a href="#recent-gallery">Recently Added</a>
-        <a href="#photos-gallery">Photos</a>
-        <a href="#videos-gallery">Videos</a>
-      </div>
-    </nav>
-  </header>
+    <a href="index.html" class="brand">
+      JB<span>.</span>
+    </a>
 
-  <main>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#recently-added">Recently Added</a>
+      <a href="#photos">Photos</a>
+      <a href="#videos">Videos</a>
+    </div>
 
-    <section class="gallery-hero-simple">
-      <div class="gallery-hero-overlay"></div>
-      <img src="jb-main.png" alt="JB Studio Gallery Feature">
-      <div class="gallery-hero-text">
-        <p class="eyebrow">JB STUDIO</p>
-        <h1>GALLERY</h1>
-      </div>
-    </section>
+  </nav>
+</header>
 
-    <section id="recent-gallery" class="content-section">
-      <div class="section-header">
-        <p class="section-label">01</p>
-        <h2>Recently Added</h2>
-      </div>
 
-      <div class="masonry-grid">
-        <a href="#img1" class="gallery-card"><img src="jb-main.png" alt="Recently added image"></a>
-        <a href="#img2" class="gallery-card"><img src="jb-main.png" alt="Recently added image"></a>
-        <a href="#img3" class="gallery-card"><img src="jb-main.png" alt="Recently added image"></a>
-      </div>
-    </section>
+<main>
 
-    <section id="photos-gallery" class="content-section">
-      <div class="section-header">
-        <p class="section-label">02</p>
-        <h2>Photos</h2>
-      </div>
+  <!-- ===============================
+       HERO
+  ================================ -->
 
-      <div class="masonry-grid">
-        <a href="#img4" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
-        <a href="#img5" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
-        <a href="#img6" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
-        <a href="#img7" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
-        <a href="#img8" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
-        <a href="#img9" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
-      </div>
-    </section>
+  <section class="gallery-hero-simple">
 
-    <section id="videos-gallery" class="content-section">
-      <div class="section-header">
-        <p class="section-label">03</p>
-        <h2>Videos</h2>
-      </div>
+    <div class="gallery-hero-overlay"></div>
 
-      <div class="video-grid">
-        <div class="video-card">
-          <div class="video-thumb">
-            <img src="jb-main.png" alt="Video thumbnail">
-            <div class="play-button">▶</div>
-          </div>
-          <div class="video-info"><span>VIDEO 01</span></div>
-        </div>
+    <img
+      src="jb-main.png"
+      alt="JB"
+    >
 
-        <div class="video-card">
-          <div class="video-thumb">
-            <img src="jb-main.png" alt="Video thumbnail">
-            <div class="play-button">▶</div>
-          </div>
-          <div class="video-info"><span>VIDEO 02</span></div>
-        </div>
+    <div class="gallery-hero-text">
+      <h1>JB</h1>
+    </div>
 
-        <div class="video-card">
-          <div class="video-thumb">
-            <img src="jb-main.png" alt="Video thumbnail">
-            <div class="play-button">▶</div>
-          </div>
-          <div class="video-info"><span>VIDEO 03</span></div>
-        </div>
-      </div>
-    </section>
+  </section>
 
-    <!-- Lightboxes -->
-    <div id="img1" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img2" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img3" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img4" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img5" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img6" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img7" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img8" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
-    <div id="img9" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
 
-    <footer class="footer">
-      <a href="index.html" class="footer-logo">JB<span>.</span></a>
-      <div class="footer-links">
-        <a href="#recent-gallery">Recently Added</a>
-        <a href="#photos-gallery">Photos</a>
-        <a href="#videos-gallery">Videos</a>
-      </div>
-    </footer>
 
-  </main>
-</body>
-</html>
-      <a href="index.html" class="brand" aria-label="Inferno Studio home">
-        INFERNO<span>.</span>
+  <!-- ===============================
+       RECENTLY ADDED
+  ================================ -->
+
+  <section
+    class="content-section"
+    id="recently-added"
+  >
+
+    <div class="section-header">
+      <p class="section-label">LATEST</p>
+      <h2>Recently Added</h2>
+    </div>
+
+
+    <div class="recent-grid">
+
+      <a
+        class="gallery-card"
+        href="#photo17"
+      >
+        <img
+          src="photo17.JPG"
+          alt="Recently added photo"
+          loading="lazy"
+        >
       </a>
 
-      <div class="nav-links">
-        <a href="index.html">Index</a>
-        <a href="gallery.html" class="active">Gallery</a>
-      </div>
 
-    </nav>
-  </header>
-
-
-  <main>
-
-    <!-- =========================================
-         GALLERY INTRO
-    ========================================== -->
-    <section class="gallery-hero">
-
-      <div class="gallery-hero-bg"></div>
-
-      <div class="gallery-heading">
-
-        <p class="eyebrow">
-          SELECTED FRAMES / 2026
-        </p>
-
-        <h1>
-          BURNED
-          <span>INTO</span>
-          MEMORY.
-        </h1>
-
-        <p class="gallery-intro">
-          Portraits built from shadow, heat, motion and
-          unfiltered masculine energy.
-        </p>
-
-      </div>
-
-      <div class="gallery-index">
-        <span>RAW PORTRAITURE</span>
-        <span>/</span>
-        <span>FILM STILLS</span>
-        <span>/</span>
-        <span>AFTER DARK</span>
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
-         MASONRY GALLERY
-    ========================================== -->
-    <section class="gallery-section">
-
-      <div class="gallery-grid">
-
-
-        <!-- IMAGE 01 -->
-        <a href="#lightbox-1" class="gallery-card tall">
-          <img
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=90"
-            alt="Cinematic male portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 001</span>
-            <strong>AFTER DARK</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 02 -->
-        <a href="#lightbox-2" class="gallery-card wide">
-          <img
-            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1400&q=90"
-            alt="Dramatic male portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 002</span>
-            <strong>ASH + BONE</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 03 -->
-        <a href="#lightbox-3" class="gallery-card">
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=90"
-            alt="Editorial male portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 003</span>
-            <strong>NO SAINTS</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 04 -->
-        <a href="#lightbox-4" class="gallery-card tall">
-          <img
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=90"
-            alt="Moody cinematic portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 004</span>
-            <strong>RED HOURS</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 05 -->
-        <a href="#lightbox-5" class="gallery-card">
-          <img
-            src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=1200&q=90"
-            alt="Dark editorial portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 005</span>
-            <strong>WILDFIRE</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 06 -->
-        <a href="#lightbox-6" class="gallery-card wide">
-          <img
-            src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=1400&q=90"
-            alt="Cinematic portrait photograph"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 006</span>
-            <strong>BURN LINE</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 07 -->
-        <a href="#lightbox-7" class="gallery-card">
-          <img
-            src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1200&q=90"
-            alt="Male fashion portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 007</span>
-            <strong>HEATWAVE</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 08 -->
-        <a href="#lightbox-8" class="gallery-card tall">
-          <img
-            src="https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=1200&q=90"
-            alt="Cinematic fashion portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 008</span>
-            <strong>SMOKE SIGNAL</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 09 -->
-        <a href="#lightbox-9" class="gallery-card">
-          <img
-            src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=1200&q=90"
-            alt="Moody masculine portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 009</span>
-            <strong>DEAD HEAT</strong>
-          </div>
-        </a>
-
-
-        <!-- IMAGE 10 -->
-        <a href="#lightbox-10" class="gallery-card wide">
-          <img
-            src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1400&q=90"
-            alt="Black and white male portrait"
-          />
-
-          <div class="gallery-overlay">
-            <span>FRAME 010</span>
-            <strong>THE LAST MATCH</strong>
-          </div>
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
-         CSS-ONLY LIGHTBOXES
-    ========================================== -->
-
-    <div id="lightbox-1" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
+      <a
+        class="gallery-card"
+        href="#photo18"
+      >
         <img
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=2000&q=95"
-          alt="Cinematic male portrait expanded"
-        />
+          src="photo18.JPG"
+          alt="Recently added photo"
+          loading="lazy"
+        >
+      </a>
 
-        <div class="lightbox-caption">
-          <span>FRAME 001</span>
-          <strong>AFTER DARK</strong>
-        </div>
+
+      <a
+        class="gallery-card"
+        href="#photo19"
+      >
+        <img
+          src="photo19.JPG"
+          alt="Recently added photo"
+          loading="lazy"
+        >
+      </a>
+
+
+      <div class="video-card featured-video">
+
+        <video
+          controls
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="video14.mov"
+            type="video/quicktime"
+          >
+        </video>
+
       </div>
+
+
+      <div class="video-card featured-video">
+
+        <video
+          controls
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="video15.mov"
+            type="video/quicktime"
+          >
+        </video>
+
+      </div>
+
+
+      <div class="video-card featured-video">
+
+        <video
+          controls
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="video16.mov"
+            type="video/quicktime"
+          >
+        </video>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ===============================
+       PHOTOS
+  ================================ -->
+
+  <section
+    class="content-section"
+    id="photos"
+  >
+
+    <div class="section-header">
+      <p class="section-label">PHOTOS</p>
+      <h2>Photos</h2>
     </div>
 
 
-    <div id="lightbox-2" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
+    <div class="masonry-grid">
 
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
+      <a href="#photo1" class="gallery-card">
+        <img src="photo1.JPG" alt="Photo 1" loading="lazy">
+      </a>
 
-        <img
-          src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=2000&q=95"
-          alt="Dramatic male portrait expanded"
-        />
+      <a href="#photo2" class="gallery-card">
+        <img src="photo2.JPG" alt="Photo 2" loading="lazy">
+      </a>
 
-        <div class="lightbox-caption">
-          <span>FRAME 002</span>
-          <strong>ASH + BONE</strong>
-        </div>
-      </div>
+      <a href="#photo3" class="gallery-card">
+        <img src="photo3.JPG" alt="Photo 3" loading="lazy">
+      </a>
+
+      <a href="#photo4" class="gallery-card">
+        <img src="photo4.JPG" alt="Photo 4" loading="lazy">
+      </a>
+
+      <a href="#photo5" class="gallery-card">
+        <img src="photo5.JPG" alt="Photo 5" loading="lazy">
+      </a>
+
+      <a href="#photo6" class="gallery-card">
+        <img src="photo6.JPG" alt="Photo 6" loading="lazy">
+      </a>
+
+      <a href="#photo7" class="gallery-card">
+        <img src="photo7.JPG" alt="Photo 7" loading="lazy">
+      </a>
+
+      <a href="#photo8" class="gallery-card">
+        <img src="photo8.JPG" alt="Photo 8" loading="lazy">
+      </a>
+
+      <a href="#photo9" class="gallery-card">
+        <img src="photo9.JPG" alt="Photo 9" loading="lazy">
+      </a>
+
+      <a href="#photo10" class="gallery-card">
+        <img src="photo10.JPG" alt="Photo 10" loading="lazy">
+      </a>
+
+      <a href="#photo11" class="gallery-card">
+        <img src="photo11.JPG" alt="Photo 11" loading="lazy">
+      </a>
+
+      <a href="#photo12" class="gallery-card">
+        <img src="photo12.JPG" alt="Photo 12" loading="lazy">
+      </a>
+
+      <a href="#photo13" class="gallery-card">
+        <img src="photo13.JPG" alt="Photo 13" loading="lazy">
+      </a>
+
+      <a href="#photo14" class="gallery-card">
+        <img src="photo14.JPG" alt="Photo 14" loading="lazy">
+      </a>
+
+      <a href="#photo15" class="gallery-card">
+        <img src="photo15.JPG" alt="Photo 15" loading="lazy">
+      </a>
+
+      <a href="#photo16" class="gallery-card">
+        <img src="photo16.JPG" alt="Photo 16" loading="lazy">
+      </a>
+
+      <a href="#photo17" class="gallery-card">
+        <img src="photo17.JPG" alt="Photo 17" loading="lazy">
+      </a>
+
+      <a href="#photo18" class="gallery-card">
+        <img src="photo18.JPG" alt="Photo 18" loading="lazy">
+      </a>
+
+      <a href="#photo19" class="gallery-card">
+        <img src="photo19.JPG" alt="Photo 19" loading="lazy">
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ===============================
+       VIDEOS
+  ================================ -->
+
+  <section
+    class="content-section"
+    id="videos"
+  >
+
+    <div class="section-header">
+      <p class="section-label">VIDEOS</p>
+      <h2>Videos</h2>
     </div>
 
 
-    <div id="lightbox-3" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
+    <div class="video-gallery">
 
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
 
-        <img
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2000&q=95"
-          alt="Editorial portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 003</span>
-          <strong>NO SAINTS</strong>
-        </div>
+      <!-- VIDEO 1 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video1.mp4" type="video/mp4">
+        </video>
       </div>
+
+
+      <!-- VIDEO 2 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 3 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 4 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video4.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 5 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video5.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 6 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video6.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 7 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video7.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 8 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video8.mov" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 9 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video9.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 10 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video10.MOV" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 11 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video11.MOV" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 12 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video12.MOV" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 13 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video13.MOV" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 14 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video14.mov" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 15 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video15.mov" type="video/quicktime">
+        </video>
+      </div>
+
+
+      <!-- VIDEO 16 -->
+      <div class="video-card">
+        <video controls playsinline preload="metadata">
+          <source src="video16.mov" type="video/quicktime">
+        </video>
+      </div>
+
+
     </div>
 
+  </section>
 
-    <div id="lightbox-4" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
 
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
 
-        <img
-          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=2000&q=95"
-          alt="Portrait expanded"
-        />
+  <!-- ==================================
+       FULL SCREEN PHOTO LIGHTBOXES
+  =================================== -->
 
-        <div class="lightbox-caption">
-          <span>FRAME 004</span>
-          <strong>RED HOURS</strong>
-        </div>
-      </div>
+
+  <div id="photo1" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo1.JPG" alt="Photo 1">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo2" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo2.JPG" alt="Photo 2">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo3" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo3.JPG" alt="Photo 3">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo4" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo4.JPG" alt="Photo 4">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo5" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo5.JPG" alt="Photo 5">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo6" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo6.JPG" alt="Photo 6">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo7" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo7.JPG" alt="Photo 7">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo8" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo8.JPG" alt="Photo 8">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo9" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo9.JPG" alt="Photo 9">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo10" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo10.JPG" alt="Photo 10">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo11" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo11.JPG" alt="Photo 11">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo12" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo12.JPG" alt="Photo 12">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo13" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo13.JPG" alt="Photo 13">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo14" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo14.JPG" alt="Photo 14">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo15" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo15.JPG" alt="Photo 15">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo16" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo16.JPG" alt="Photo 16">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo17" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo17.JPG" alt="Photo 17">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo18" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo18.JPG" alt="Photo 18">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+  <div id="photo19" class="lightbox">
+    <a href="#photos" class="lightbox-bg"></a>
+    <img src="photo19.JPG" alt="Photo 19">
+    <a href="#photos" class="lightbox-close">×</a>
+  </div>
+
+
+
+  <!-- ===============================
+       FOOTER
+  ================================ -->
+
+  <footer class="footer">
+
+    <a href="index.html" class="footer-logo">
+      JB<span>.</span>
+    </a>
+
+    <div class="footer-links">
+      <a href="#recently-added">Recently Added</a>
+      <a href="#photos">Photos</a>
+      <a href="#videos">Videos</a>
     </div>
 
+  </footer>
 
-    <div id="lightbox-5" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
-        <img
-          src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=2000&q=95"
-          alt="Dark editorial portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 005</span>
-          <strong>WILDFIRE</strong>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="lightbox-6" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
-        <img
-          src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=2000&q=95"
-          alt="Cinematic portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 006</span>
-          <strong>BURN LINE</strong>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="lightbox-7" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
-        <img
-          src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=2000&q=95"
-          alt="Fashion portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 007</span>
-          <strong>HEATWAVE</strong>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="lightbox-8" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
-        <img
-          src="https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=2000&q=95"
-          alt="Cinematic fashion portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 008</span>
-          <strong>SMOKE SIGNAL</strong>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="lightbox-9" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
-        <img
-          src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=2000&q=95"
-          alt="Moody masculine portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 009</span>
-          <strong>DEAD HEAT</strong>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="lightbox-10" class="lightbox">
-      <a href="#" class="lightbox-background"></a>
-
-      <div class="lightbox-content">
-        <a href="#" class="lightbox-close">×</a>
-
-        <img
-          src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=2000&q=95"
-          alt="Male portrait expanded"
-        />
-
-        <div class="lightbox-caption">
-          <span>FRAME 010</span>
-          <strong>THE LAST MATCH</strong>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-    <footer class="footer">
-
-      <div>
-        <a href="index.html" class="footer-logo">
-          INFERNO<span>.</span>
-        </a>
-
-        <p>
-          Cinematic male portrait photography.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <a href="index.html">INDEX</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="#top">BACK TO TOP ↑</a>
-      </div>
-
-      <p class="copyright">
-        © 2026 INFERNO STUDIO
-      </p>
-
-    </footer>
-
-  </main>
+</main>
 
 </body>
 </html>
