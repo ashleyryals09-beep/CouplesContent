@@ -1,48 +1,253 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Private Gallery</title>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Cinematic male content photography with fire-lit portraits, dramatic shadows, and 35mm-inspired visual storytelling."
+  />
+
+  <title>INFERNO STUDIO | Cinematic Photography</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="topbar">
-    <div class="wrap">
-      <h1>Private Gallery</h1>
-      <p class="sub">18+ only • Photos + Videos</p>
-    </div>
+
+<body class="home-page">
+
+  <!-- =========================================
+       FLOATING GLOBAL NAVIGATION
+  ========================================== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand" aria-label="Inferno Studio home">
+        INFERNO<span>.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Index</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </nav>
   </header>
 
-  <main class="wrap">
-    <section class="section">
-      <div class="section-title">
-        <h2>Photos</h2>
-        <div id="photoCount" class="count"></div>
+
+  <!-- =========================================
+       HERO
+  ========================================== -->
+  <main>
+
+    <section class="hero" id="top">
+
+      <div class="hero-background"></div>
+      <div class="hero-fire-overlay"></div>
+      <div class="hero-vignette"></div>
+
+      <!-- Decorative ash -->
+      <div class="ash ash-1"></div>
+      <div class="ash ash-2"></div>
+      <div class="ash ash-3"></div>
+      <div class="ash ash-4"></div>
+      <div class="ash ash-5"></div>
+      <div class="ash ash-6"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          CINEMATIC PORTRAITURE / 35MM ENERGY
+        </p>
+
+        <h1 class="hero-title">
+          SET THE
+          <span>FRAME</span>
+          ON FIRE.
+        </h1>
+
+        <p class="hero-copy">
+          Raw masculine energy. Smoke. Heat. Shadow.
+          Portraiture built to feel less like a photoshoot
+          and more like a frame ripped from a midnight film.
+        </p>
+
+        <div class="hero-actions">
+          <a href="gallery.html" class="fire-button">
+            <span>ENTER THE GALLERY</span>
+          </a>
+
+          <a href="#vision" class="secondary-link">
+            DISCOVER THE VISION
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
       </div>
-      <div id="photoGrid" class="grid"></div>
+
+
+      <div class="hero-side-label">
+        <span>RAW</span>
+        <span>SMOKE</span>
+        <span>FIRE</span>
+        <span>FILM</span>
+      </div>
+
+
+      <a href="#vision" class="scroll-indicator" aria-label="Scroll to creative vision">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </a>
+
     </section>
 
-    <section class="section">
-      <div class="section-title">
-        <h2>Videos</h2>
-        <div id="videoCount" class="count"></div>
+
+    <!-- =========================================
+         CREATIVE VISION
+    ========================================== -->
+    <section class="vision-section" id="vision">
+
+      <div class="section-number">
+        01 / CREATIVE VISION
       </div>
-      <div id="videoGrid" class="grid"></div>
+
+      <div class="vision-grid">
+
+        <div class="vision-heading">
+          <p class="eyebrow">BEAUTY IN THE BURN</p>
+
+          <h2>
+            NOT CLEAN.
+            <br />
+            NOT SAFE.
+            <br />
+            <span>UNFORGETTABLE.</span>
+          </h2>
+        </div>
+
+
+        <div class="vision-content">
+
+          <p class="vision-lead">
+            We create photography that feels dangerous enough
+            to be remembered.
+          </p>
+
+          <p>
+            Inspired by grain-heavy 35mm film, late-night cinema,
+            burnt-orange practical lighting and deep crushed shadows,
+            every frame is designed to feel lived-in instead of staged.
+          </p>
+
+          <p>
+            The goal is not perfection. It is presence — sweat,
+            texture, motion, smoke, emotion, imperfections and
+            cinematic tension frozen at exactly the right second.
+          </p>
+
+          <div class="vision-stats">
+
+            <div class="stat">
+              <strong>35MM</strong>
+              <span>FILM-STILL ENERGY</span>
+            </div>
+
+            <div class="stat">
+              <strong>RAW</strong>
+              <span>EMOTION FIRST</span>
+            </div>
+
+            <div class="stat">
+              <strong>FIRE</strong>
+              <span>LIGHT + SHADOW</span>
+            </div>
+
+          </div>
+
+          <a href="gallery.html" class="text-button">
+            VIEW THE FULL GALLERY
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
     </section>
+
+
+    <!-- =========================================
+         FEATURE STRIP
+    ========================================== -->
+    <section class="feature-strip">
+
+      <div class="marquee">
+        <div class="marquee-track">
+
+          <span>PORTRAITURE</span>
+          <b>✦</b>
+          <span>FIRELIGHT</span>
+          <b>✦</b>
+          <span>35MM ENERGY</span>
+          <b>✦</b>
+          <span>RAW MOMENTS</span>
+          <b>✦</b>
+          <span>CINEMATIC SHADOW</span>
+          <b>✦</b>
+
+          <span>PORTRAITURE</span>
+          <b>✦</b>
+          <span>FIRELIGHT</span>
+          <b>✦</b>
+          <span>35MM ENERGY</span>
+          <b>✦</b>
+          <span>RAW MOMENTS</span>
+          <b>✦</b>
+          <span>CINEMATIC SHADOW</span>
+          <b>✦</b>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="footer">
+
+      <div>
+        <a href="index.html" class="footer-logo">
+          INFERNO<span>.</span>
+        </a>
+
+        <p>
+          Cinematic male portrait photography.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">INDEX</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="#top">BACK TO TOP ↑</a>
+      </div>
+
+      <p class="copyright">
+        © 2026 INFERNO STUDIO
+      </p>
+
+    </footer>
+
   </main>
 
-  <!-- Modal -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-inner">
-      <div class="modal-bar">
-        <div id="modalTitle" class="modal-title">Preview</div>
-        <button id="closeBtn" class="close">Close</button>
-      </div>
-      <div id="modalContent" class="modal-content"></div>
-    </div>
-  </div>
-
-  <script src="gallery.js"></script>
 </body>
 </html>
