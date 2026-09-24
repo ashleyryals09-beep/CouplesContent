@@ -2,18 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <meta
-    name="description"
-    content="Cinematic photography gallery featuring dramatic male portraiture, firelight, shadows and film-inspired imagery."
-  />
-
-  <title>Gallery | INFERNO STUDIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JB Studio | Gallery</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +15,118 @@
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
 
-
-<body class="gallery-page">
-
-  <!-- =========================================
-       GLOBAL NAV
-  ========================================== -->
   <header class="site-header">
     <nav class="navbar">
+      <a href="index.html" class="brand">JB<span>.</span></a>
 
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="#recent-gallery">Recently Added</a>
+        <a href="#photos-gallery">Photos</a>
+        <a href="#videos-gallery">Videos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="gallery-hero-simple">
+      <div class="gallery-hero-overlay"></div>
+      <img src="jb-main.png" alt="JB Studio Gallery Feature">
+      <div class="gallery-hero-text">
+        <p class="eyebrow">JB STUDIO</p>
+        <h1>GALLERY</h1>
+      </div>
+    </section>
+
+    <section id="recent-gallery" class="content-section">
+      <div class="section-header">
+        <p class="section-label">01</p>
+        <h2>Recently Added</h2>
+      </div>
+
+      <div class="masonry-grid">
+        <a href="#img1" class="gallery-card"><img src="jb-main.png" alt="Recently added image"></a>
+        <a href="#img2" class="gallery-card"><img src="jb-main.png" alt="Recently added image"></a>
+        <a href="#img3" class="gallery-card"><img src="jb-main.png" alt="Recently added image"></a>
+      </div>
+    </section>
+
+    <section id="photos-gallery" class="content-section">
+      <div class="section-header">
+        <p class="section-label">02</p>
+        <h2>Photos</h2>
+      </div>
+
+      <div class="masonry-grid">
+        <a href="#img4" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
+        <a href="#img5" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
+        <a href="#img6" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
+        <a href="#img7" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
+        <a href="#img8" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
+        <a href="#img9" class="gallery-card"><img src="jb-main.png" alt="Photo"></a>
+      </div>
+    </section>
+
+    <section id="videos-gallery" class="content-section">
+      <div class="section-header">
+        <p class="section-label">03</p>
+        <h2>Videos</h2>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-thumb">
+            <img src="jb-main.png" alt="Video thumbnail">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="video-info"><span>VIDEO 01</span></div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-thumb">
+            <img src="jb-main.png" alt="Video thumbnail">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="video-info"><span>VIDEO 02</span></div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-thumb">
+            <img src="jb-main.png" alt="Video thumbnail">
+            <div class="play-button">▶</div>
+          </div>
+          <div class="video-info"><span>VIDEO 03</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightboxes -->
+    <div id="img1" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img2" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img3" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img4" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img5" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img6" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img7" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img8" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+    <div id="img9" class="lightbox"><a href="#" class="lightbox-bg"></a><img src="jb-main.png" alt=""><a href="#" class="lightbox-close">×</a></div>
+
+    <footer class="footer">
+      <a href="index.html" class="footer-logo">JB<span>.</span></a>
+      <div class="footer-links">
+        <a href="#recent-gallery">Recently Added</a>
+        <a href="#photos-gallery">Photos</a>
+        <a href="#videos-gallery">Videos</a>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
       <a href="index.html" class="brand" aria-label="Inferno Studio home">
         INFERNO<span>.</span>
       </a>
