@@ -578,3 +578,132 @@ a {
     align-items: flex-start;
   }
 }
+/* =========================================================
+   REAL MEDIA
+========================================================= */
+
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.recent-grid .gallery-card,
+.recent-grid .video-card {
+  min-width: 0;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.video-card {
+  position: relative;
+  background: #080808;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.45);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(255,77,0,0.45);
+
+  box-shadow:
+    0 0 15px rgba(255,77,0,0.24),
+    0 0 40px rgba(255,77,0,0.12),
+    0 20px 45px rgba(0,0,0,0.55);
+}
+
+.video-card video {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 9 / 16;
+
+  background: #000;
+
+  object-fit: cover;
+}
+
+.featured-video video {
+  aspect-ratio: 4 / 5;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Keeps vertical photos looking natural */
+.masonry-grid {
+  columns: 3;
+  column-gap: 18px;
+}
+
+.masonry-grid .gallery-card {
+  width: 100%;
+  display: inline-block;
+  margin: 0 0 18px;
+}
+
+
+/* Recently Added cards */
+.recent-grid .gallery-card img {
+  width: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   RESPONSIVE MEDIA
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .recent-grid,
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .masonry-grid {
+    columns: 2;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .recent-grid,
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .masonry-grid {
+    columns: 1;
+  }
+
+  .video-card video {
+    aspect-ratio: auto;
+    max-height: 80vh;
+  }
+
+}
